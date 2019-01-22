@@ -14,13 +14,48 @@ $ npm install @payal_maniyar/react-native_datetimepicker
 ## Usage
 
 ```js
-const tiny = require("@bamblehorse/tiny");
+import DateTimePicker from '@payal_maniyar/react-native_datetimepicker';
 
-tiny("So much space!");
-//=> "Somuchspace!"
+ <DateTimePicker
+        style = {
+          {
+            width: '100%',
+            marginBottom: 8
+          }
+        }
+        mode = "datetime" //{"datetime"}
+        placeholder = "Pick a Date"
+        format = "DD/M/YYYY HH:mm a"
+        date = {
+          this.state.date
+        }
+        minDate = {
+          moment().add(10, 'years').format("DD/M/YYYY HH:mm a")
+        }
+        maxDate = {
+          moment().subtract(10, 'years').format("DD/M/YYYY HH:mm a")
+        }
+        confirmBtnText = "Done"
+        cancelBtnText = "Cancel"
+        customStyles = {
+          {
+            dateIcon: {
+              position: 'absolute',
+              right: 0,
+              marginLeft: 0
+            },
+            dateInput: {
+              marginRight: 36,
+              borderRadius: 5,
+            }
+            // ... You can check the source to find the other keys.
+          }
+        }
+        onDateChange = {
+          (date) =>
+          this.setState({
+            date: date
+          })
+        }
 
-tiny(1337);
-//=> Uncaught TypeError: Tiny wants a string!
-//    at tiny (<anonymous>:2:41)
-//    at <anonymous>:1:1
-```
+        />
