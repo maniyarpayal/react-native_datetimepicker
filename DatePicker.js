@@ -546,7 +546,7 @@ const FORMATS = {
     duration: 300,
     confirmTextIOS: "Done",
     cancelTextIOS: "Cancel",
-    iconSource: require('../../Resources/Icons/calendar.png'),
+    iconSource: require('/calendar.png'),
     customStyles: {},
     titleIOS: "Pick a date",
     // whether or not show the icon
