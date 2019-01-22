@@ -1,4 +1,22 @@
 {
     "name": "@payal_maniyar/react-native_datetimepicker",
-    "version": "1.0.0"
+    "version": "1.0.1",
+    "description": "Date Time Picker view as a modal",
+    "license": "MIT",
+    "repository": "maniyarpayal/react-native_datetimepicker",
+    "main": "DatePicker.js",
+    "keywords": [
+      "react-native",
+      "datepicker",
+      "datetimepicker",
+      "timepicker",
+      "npm",
+      "package",
+      "payal_maniyar"
+    ],
+    "devDependencies": {
+      "react-native-modal": "^7.0.2",
+      "moment": "^2.23.0"
+    }
+
 }
