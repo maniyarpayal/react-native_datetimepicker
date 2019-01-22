@@ -14,7 +14,8 @@
       "package",
       "payal_maniyar"
     ],
-    "devDependencies": {
+    "bundleDependencies": false,
+    "dependencies": {
       "react-native-modal": "^7.0.2",
       "moment": "^2.23.0"
     }
